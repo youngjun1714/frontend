@@ -1,0 +1,58 @@
+.snsButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #e6e9ec;
+  border-radius: 48px;
+  transition: width 0.4s;
+  overflow: hidden;
+
+  .linkWrap {
+    height: 48px;
+    padding: 11px 11px;
+  }
+
+  .snsWrap {
+    display: none;
+    align-items: center;
+    gap: 30px;
+    margin: 0 12px;
+    width: 0;
+    transition: all 0s;
+
+    & > button {
+      display: flex;
+      align-items: center;
+    }
+    .instagram:hover path {
+      fill: url(#gradient);
+      transition: 0.2s;
+    }
+    .discord:hover path {
+      fill: #5865f2;
+      transition: 0.2s;
+    }
+    .twitter:hover path {
+      fill: #1da1f2;
+      transition: 0.2s;
+    }
+    .youtube:hover path {
+      fill: #ff0302;
+      transition: 0.2s;
+    }
+    .facebook:hover path {
+      fill: #1877f2;
+      transition: 0.2s;
+    }
+  }
+
+  &:hover {
+    width: 100%;
+    .snsWrap {
+      display: flex;
+      width: fit-content;
+    }
+  }
+}

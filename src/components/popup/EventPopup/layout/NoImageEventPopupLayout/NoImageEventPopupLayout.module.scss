@@ -1,0 +1,103 @@
+.card {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  &.sm {
+    max-width: 400px;
+  }
+  &.md {
+    max-width: 600px;
+  }
+  &.lg {
+    max-width: 742px;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.tokenImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 168px;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  & > p {
+    text-align: center;
+    word-break: break-word;
+  }
+}
+
+.contentsSection {
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 38px;
+  & > .textWrapper {
+    padding: 0 20px;
+    & > .title {
+      font-size: 40px;
+    }
+  }
+}
+
+.contents {
+  height: 234px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 40px;
+  gap: 48px;
+}
+
+.buttonWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 32px;
+  & > .cancelButton {
+    color: var(--artiside-neutral2);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.36px;
+  }
+}
+
+.title {
+  color: var(--artiside-neutral1);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.28px;
+}
+
+.description {
+  color: var(--artiside-neutral2);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+}
+
+.button {
+  width: 280px;
+  height: 56px;
+  background-color: var(--primary-color);
+  border-radius: 100px;
+  color: var(--artiside-neutral7);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.24px;
+}

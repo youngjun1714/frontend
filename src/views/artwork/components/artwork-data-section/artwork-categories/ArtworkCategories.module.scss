@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+
+  & > h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--artiside-neutral1);
+  }
+}
+
+.badgeWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}

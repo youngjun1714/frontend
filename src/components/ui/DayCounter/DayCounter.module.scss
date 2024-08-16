@@ -1,0 +1,15 @@
+.dayCounter {
+  width: 100%;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+.day {
+  width: 46px;
+  height: 5px;
+  border-radius: 5px;
+  background: var(--artiside-neutral5);
+}
+.hasPassed {
+  background-color: var(--primary-color);
+}

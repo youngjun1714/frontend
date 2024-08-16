@@ -1,0 +1,30 @@
+.banner {
+  width: 100%;
+  display: flex;
+  gap: 26px;
+  padding: 40px 20px 60px;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.firstBanner,
+.secondBanner {
+  position: relative;
+  width: 372px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 15px 40px 0px rgba(81, 81, 81, 0.15);
+}
+
+.loadingDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 15px 40px 0px rgba(81, 81, 81, 0.15);
+}
+
+.secondBanner {
+  width: 1162px;
+}

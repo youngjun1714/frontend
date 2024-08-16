@@ -1,0 +1,19 @@
+.modalRoot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 8px;
+}

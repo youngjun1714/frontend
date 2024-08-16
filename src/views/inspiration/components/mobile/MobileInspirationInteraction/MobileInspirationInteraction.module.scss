@@ -1,0 +1,66 @@
+.container {
+  display: none;
+  width: 100%;
+  padding: 16px 0;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 480px) {
+    display: flex;
+  }
+  & > div {
+    display: flex;
+    align-items: center;
+    &.left {
+      gap: 8px;
+      color: var(--artiside-neutral3);
+      font-size: 12px;
+      & > div {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+      }
+    }
+
+    &.right {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      & > button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        transition: background-color 300ms;
+        border-radius: 100px;
+        &:active {
+          background-color: var(--artiside-neutral5);
+        }
+        @media (hover: hover) and (pointer: fine) {
+          &:hover {
+            background-color: var(--artiside-neutral5);
+          }
+        }
+      }
+    }
+  }
+}
+
+.isLiked {
+  animation: like 450ms ease-in-out;
+}
+
+@keyframes like {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

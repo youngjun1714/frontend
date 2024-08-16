@@ -1,0 +1,146 @@
+.walletContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1600px !important;
+  background: #fcfeff;
+  padding-top: 64px;
+
+  @media (max-width: 480px) {
+    padding-top: 0;
+    height: auto;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 16px;
+  gap: 17px;
+
+  & > .user {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+
+      & > h1 {
+        // name
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        color: var(--artiside-neutral1);
+        font-weight: 600;
+        font-size: 24px;
+        font-family: SUIT;
+        @media (max-width: 480px) {
+          font-size: 18px;
+        }
+      }
+
+      & > p {
+        // nickname
+        color: var(--artiside-neutral2);
+        font-size: 18px;
+        font-weight: 500;
+        font-family: SUIT;
+        @media (max-width: 480px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  & > .seedingBtn {
+    padding: 0 18px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 32px;
+    border-radius: 100px;
+    background-color: rgba(0, 181, 176, 0.1);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      svg {
+        transform: translateX(3px);
+      }
+    }
+  }
+}
+
+.balance {
+  display: flex;
+  gap: 24px;
+  @media (max-width: 1080px) {
+    flex-direction: column;
+  }
+
+  .seedingStakingWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 50%;
+    @media (max-width: 1080px) {
+      width: 100%;
+    }
+  }
+}
+
+.activityButtons {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 10px 20px 0px rgba(170, 170, 170, 0.15);
+  padding: 24px 30px;
+  margin-bottom: 56px;
+
+  .label {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--artiside-neutral2);
+    font-family: SUIT;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.16px;
+  }
+  .activityTypeButton {
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: 1px solid var(--artiside-neutral4);
+    background: #fff;
+    color: var(--artiside-neutral2);
+    font-family: SUIT;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -0.16px;
+    &.active {
+      border: 1px solid var(--artiside-neutral1);
+      background: var(--artiside-neutral1);
+      color: var(--artiside-neutral7);
+    }
+  }
+}
+
+.tableTitle {
+  color: var(--artiside-neutral1);
+  font-family: SUIT;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.48px;
+  margin-bottom: 24px;
+}

@@ -1,0 +1,13 @@
+.container {
+  margin-bottom: 56px;
+}
+.title {
+  color: var(--typography-black-1);
+  font-weight: 600;
+  font-size: 32px;
+  & > span {
+    color: var(--secondary-color);
+    font-family: 'Yellowtail';
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,158 @@
+.table {
+  & > thead tr {
+    height: 38px;
+    & > th {
+      height: 38px;
+      padding: 0px 10px;
+      color: var(--artiside-neutral2);
+      font-family: SUIT;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 120%;
+      letter-spacing: -0.28px;
+      border-bottom: 1px solid var(--artiside-neutral5);
+    }
+  }
+  & > tbody tr {
+    height: 72px;
+    & > td {
+      height: 38px;
+      padding: 16px 10px;
+      color: #000000;
+      font-family: SUIT;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 120%;
+      border-bottom: 1px solid var(--artiside-neutral5);
+    }
+  }
+
+  .artistName {
+    color: var(--artiside-neutral2);
+    font-size: 13px;
+  }
+  .seedingButton {
+    display: inline-flex;
+    width: 140px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 50px;
+    background: var(--primary-color);
+    color: #fcfeff;
+    font-size: 14px;
+    box-sizing: border-box;
+    cursor: pointer;
+    & > svg {
+      width: 20px;
+    }
+    &:hover {
+      border: 1px solid var(--artiside-neutral1);
+      box-shadow: 1px 2px 0px 0px #000;
+    }
+    &:disabled {
+      color: #bbc1c7;
+      background: #e6e9ec;
+      cursor: default;
+      &:hover {
+        border: none;
+        box-shadow: none;
+      }
+    }
+  }
+  .seedUnseedButton {
+    display: inline-flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid var(--artiside-neutral5);
+    background: #fdfdfd;
+    color: #000;
+    font-family: SUIT;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    & > span {
+      color: var(--artiside-neutral5);
+      padding: 0 3px;
+    }
+    &:disabled {
+      color: #bbc1c7;
+      background: #e6e9ec;
+      cursor: default;
+      span {
+        color: #bbc1c7;
+      }
+    }
+  }
+  .seedersButton {
+    display: inline-flex;
+    align-items: center;
+    color: #000;
+    font-family: SUIT;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+  }
+  .adf {
+    color: var(--artiside-neutral3);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.24px;
+  }
+  .nextEpisode {
+    color: var(--artiside-neutral3);
+    font-size: 14px;
+  }
+  .mySeedValue {
+    color: var(--primary-color);
+  }
+  .time {
+    color: var(--artiside-neutral2);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 120%;
+  }
+
+  .noItems {
+    height: 340px;
+    border: none;
+    color: var(--artiside-neutral3);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -0.18px;
+  }
+  b {
+    color: var(--primary-color);
+  }
+  .unlockDate {
+    display: flex;
+    align-items: center;
+    svg {
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+    }
+  }
+  .unlockDateTooltip {
+    position: absolute;
+    bottom: 16px;
+    left: 12px;
+    display: flex;
+    align-items: center;
+    svg {
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+    }
+  }
+
+  .hoverCell:hover svg path {
+    fill: #00b5b0;
+  }
+}

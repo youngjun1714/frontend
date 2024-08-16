@@ -1,0 +1,11 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  @media (min-width: 481px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 8px;
+  }
+}

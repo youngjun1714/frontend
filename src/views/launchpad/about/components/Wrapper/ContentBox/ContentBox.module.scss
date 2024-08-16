@@ -1,0 +1,17 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 60px;
+  max-width: 1560px;
+  width: 100%;
+  padding: 130px 130px;
+  background-color: var(--artiside-neutral7);
+  gap: 20px;
+
+  @media (max-width: 1080px) {
+    border-radius: 20px;
+    padding: 35px 20px 54px;
+    flex-direction: column;
+  }
+}

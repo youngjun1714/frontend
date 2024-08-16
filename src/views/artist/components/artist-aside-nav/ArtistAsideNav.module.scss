@@ -1,0 +1,33 @@
+.aside {
+  position: sticky;
+  top: 50px;
+  margin-bottom: 50px;
+  margin-left: 26px;
+
+  & > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+
+    & > li {
+      width: fit-content;
+      padding-inline-start: 1ch;
+      color: var(--artiside-neutral2);
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+
+      &.active {
+        // list-style-type: url("/src/assets/icons/active-list-style.svg"); // not working
+        list-style-type: disc; // Currently replacing with this value
+        color: var(--artiside-neutral1);
+        font-weight: 700;
+        transition: 0.2s;
+      }
+
+      &:not(.active) {
+        list-style-type: disc;
+      }
+    }
+  }
+}

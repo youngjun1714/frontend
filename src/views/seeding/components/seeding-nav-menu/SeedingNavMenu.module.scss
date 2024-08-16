@@ -1,0 +1,32 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin: 0px 0px 25px;
+
+  & > ul {
+    display: flex;
+    gap: 10px;
+  }
+  .navButton {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    padding: 0 20px;
+    border-radius: 100px;
+    border: 1px solid #e6e9ec;
+    background: #fff;
+    box-shadow: 0px 1px 3px 0px rgba(142, 148, 169, 0.15);
+    color: var(--artiside-neutral2);
+    font-family: SUIT;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -0.16px;
+    &.isSelected {
+      background: var(--primary-color);
+      color: #fff;
+    }
+  }
+}

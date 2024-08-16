@@ -1,0 +1,14 @@
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed var(--artiside-neutral5);
+  border-radius: 20px;
+  height: 60px;
+  background-color: rgba(230, 233, 236, 0.2);
+  color: var(--artiside-neutral3);
+  & > h1 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}

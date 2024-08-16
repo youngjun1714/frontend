@@ -1,0 +1,24 @@
+.section {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FCFEFF;
+  @media (max-width: 900px) {
+    display: flex;
+  }
+}
+
+.avatarWrapper {
+  border: 7px solid #FFF;
+  border-radius: 100px;
+  background-color: var(--artiside-neutral5);
+  margin-top: -54px;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.contents {
+  width: 100%;
+  padding: 20px;
+}

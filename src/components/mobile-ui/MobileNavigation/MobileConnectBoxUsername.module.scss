@@ -1,0 +1,39 @@
+.nameWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 300ms;
+  cursor: pointer;
+  & > button {
+    font-size: 0;
+  }
+  &:hover {
+    background-color: var(--artiside-neutral5);
+  }
+}
+
+.name {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  & > article {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    & > h1 {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      color: var(--artiside-neutral1);
+      font-size: 18px;
+      font-weight: 700;
+    }
+    & > h2 {
+      color: var(--artiside-neutral2);
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}

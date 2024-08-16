@@ -1,0 +1,24 @@
+.button {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  opacity: 0.5;
+  transition: opacity 300ms;
+  &:hover {
+    opacity: 1;
+  }
+  display: none;
+  @media (max-width: 1080px) {
+    display: block;
+    width: 60px;
+    height: 60px;
+    top: 30px;
+    left: 0px;
+    svg {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  & > h1 {
+    color: var(--artiside-neutral1);
+    font-weight: 600;
+    font-size: 32px;
+  }
+
+  & > p {
+    color: var(--artiside-neutral3);
+    font-weight: 500;
+  }
+}
+
+.cardCenter {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.numbers {
+  display: flex;
+  width: 383px;
+  gap: 30px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--artiside-neutral5);
+
+  & > p {
+    font-size: 14px;
+    color: var(--artiside-neutral2);
+    cursor: pointer;
+    &:last-child {
+      pointer-events: none;
+    }
+
+    & > span {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--artiside-neutral1);
+    }
+  }
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--artiside-neutral3);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+// .email {
+//   border-top: 1px solid var(--artiside-neutral5);
+//   padding-top: 10px;
+//   & > p {
+//     display: flex;
+//     align-items: center;
+//     gap: 12px;
+//     font-weight: 500;
+//     font-size: 14px;
+//     & > a {
+//       color: var(--artiside-neutral2);
+//     }
+//   }
+// }
+
+.cardBottom {
+  display: flex;
+  gap: 10px;
+
+  & > button:not(.setting) {
+    height: 48px;
+    border: 1px solid var(--artiside-neutral5);
+  }
+}
+
+.copyButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+  color: var(--artiside-neutral2);
+  border-radius: 100px;
+  font-family: 'Rota';
+  font-weight: 600;
+  font-size: 15px;
+  padding: 0 24px;
+  gap: 8px;
+}
+
+.setting {
+  border: 0px solid black;
+  transition: 0.25s;
+  // &:hover {
+  //   transform:rotate(35deg);
+  //   transition: 0.25s;
+  // }
+}
+
+.partnerHelper {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 0 24px;
+  height: 48px;
+  border: 1px solid var(--artiside-neutral5);
+  border-radius: 100px;
+  color: #fff;
+  font-family: Rota;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}

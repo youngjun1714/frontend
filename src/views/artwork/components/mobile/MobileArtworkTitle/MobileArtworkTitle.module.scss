@@ -1,0 +1,59 @@
+.mobileTitle {
+  display: none;
+  padding: 0 20px;
+  margin-bottom: 12px;
+  flex-direction: column;
+  gap: 16px;
+  @media(max-width: 480px) {
+    display: flex;
+  }
+  & > h1 {
+    color: var(--artiside-neutral1);
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.48px;
+    line-height: 28.8px;
+    overflow-wrap: break-word;
+  }
+}
+
+.mobileInfoSection {
+  display: flex;
+  justify-content: space-between;
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    // &.right {
+    //   & > 
+    // }
+  }
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  & > h1 {
+    font-size: 14px;
+    color: var(--artiside-neutral1);
+    letter-spacing: -0.28px;
+    font-weight: 600;
+    & > span {
+      font-size: 12px;
+      color: var(--artiside-neutral2);
+      letter-spacing: -0.2px;
+      font-weight: 500;
+    }
+  }
+}
+
+.moreButton {
+  width: 24px;
+  height: 24px;
+  border-radius: 100px;
+  transition: 300ms;
+  &:active, &:hover {
+    background-color: var(--artiside-neutral5);
+  }
+}

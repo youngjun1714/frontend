@@ -1,0 +1,70 @@
+.episodSelect {
+  width: 580px;
+  height: 50px;
+  border-radius: 10px;
+  background: var(--artiside-neutral7);
+  & > svg {
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 4px);
+  }
+  & > fieldset {
+    border: 1.5px solid var(--artiside-neutral5) !important;
+  }
+}
+.episodeNo {
+  display: flex;
+  align-items: center;
+  padding: 6px 9px 6px 6px;
+  color: var(--artiside-neutral1);
+  font-family: SUIT;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  border-radius: 8px;
+  border: 1px solid var(--primary-color);
+  background: var(--primary-color-10);
+}
+.menuItem {
+  width: 100%;
+  border-radius: 10px;
+  height: 48px;
+  margin-bottom: 8px;
+  padding: 0;
+  &:hover {
+    background-color: var(--artiside-neutral6);
+  }
+  &.selected {
+    background-color: var(--primary-color-20);
+    & * {
+      color: var(--primary-color);
+    }
+  }
+  &.disabled {
+    & * {
+      color: var(--artiside-neutral3);
+    }
+  }
+  .episodeNo {
+    border: none;
+    background: inherit;
+  }
+  svg {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
+
+.episodePeriod {
+  display: flex;
+  align-items: center;
+  color: var(--artiside-neutral2);
+  font-family: SUIT;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}

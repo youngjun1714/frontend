@@ -1,0 +1,64 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: Rota;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--artiside-neutral6);
+    transition: 0.2s;
+  }
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 36px;
+  height: 36px;
+  background-color: var(--artiside-neutral5);
+  border-radius: 5px;
+  flex-shrink: 0;
+  & > img {
+    border-radius: 5px;
+  }
+  & > span {
+    width: 50% !important;
+    height: 50% !important;
+  }
+}
+
+.artist {
+  & > h1 {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-weight: 600;
+    font-size: 14px;
+    white-space: nowrap;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+  }
+
+  & > h2 {
+    color: var(--artiside-neutral2);
+    font-size: 12px;
+  }
+}
+
+.nodata {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: Rota;
+  font-weight: 500;
+  color: var(--artiside-neutral2);
+  padding: 20px 10px;
+  pointer-events: none;
+}

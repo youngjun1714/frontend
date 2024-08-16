@@ -1,0 +1,18 @@
+.section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 140px;
+  width: 100%;
+  background-color: var(--artiside-neutral6);
+  background-image: url(../../../../public/assets/images//about-seeding/about-seeding-background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 0 30px 160px;
+  @media (max-width: 1080px) {
+    gap: 56px;
+    background-image: none;
+  }
+}

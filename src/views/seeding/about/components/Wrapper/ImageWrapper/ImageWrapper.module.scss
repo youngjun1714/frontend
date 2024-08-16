@@ -1,0 +1,36 @@
+.imgWrapper {
+  position: relative;
+  width: 50%;
+  height: 100%;
+
+  &.right {
+    text-align: right;
+  }
+  &.center {
+    text-align: center;
+  }
+  &.web {
+    @media (max-width: 1080px) {
+      display: none;
+    }
+  }
+  &.mobile {
+    display: none;
+    @media (max-width: 1080px) {
+      display: block;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  @media (max-width: 1080px) {
+    width: 100%;
+    text-align: center !important;
+    margin: 0 -20px;
+    img {
+      height: fit-content;
+    }
+  }
+}

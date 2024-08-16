@@ -1,0 +1,38 @@
+.imgWrapper {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+
+  &.right {
+    justify-content: right;
+  }
+  &.center {
+    justify-content: center;
+  }
+  &.web {
+    @media (max-width: 1080px) {
+      display: none;
+    }
+  }
+  &.mobile {
+    display: none;
+    @media (max-width: 1080px) {
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  @media (max-width: 1080px) {
+    width: 100%;
+    justify-content: center !important;
+    margin: 50px 20px 0;
+    img {
+      height: fit-content;
+    }
+  }
+}

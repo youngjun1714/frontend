@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+  gap: 26px;
+  width: 100%;
+  border-bottom: 1px solid var(--artiside-neutral6);
+  overflow: auto;
+  padding: 0 20px;
+  @media (min-width: 481px) {
+    justify-content: center !important;
+  }
+  & > button {
+    padding: 16px 0;
+    flex-shrink: 0;
+    color: var(--artiside-neutral2);
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.15px;
+    transition: border 300ms;
+    &.active {
+      color: var(--artiside-neutral1);
+      font-weight: 700;
+      border-bottom: 2px solid var(--artiside-neutral1);
+    }
+  }
+}

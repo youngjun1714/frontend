@@ -1,0 +1,16 @@
+.list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 8px;
+  border-radius: 5px;
+  transition: 0.25s;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--artiside-neutral5);
+  }
+  & > span {
+    font-size: 0;
+  }
+}

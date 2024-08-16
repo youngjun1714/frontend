@@ -1,0 +1,27 @@
+.nav {
+  padding: 0 20px;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+  overflow: auto;
+  border-bottom: 1px solid var(--artiside-neutral6);
+
+  & > button {
+    padding: 10px 0;
+    color: var(--artiside-neutral2);
+    letter-spacing: -0.15px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    &::first-letter {
+      text-transform: uppercase;
+    }
+    &.active {
+      color: var(--artiside-neutral1);
+      font-weight: 700;
+      border-bottom: 2px solid var(--artiside-neutral1);
+      transition: 300ms;
+    }
+  }
+}

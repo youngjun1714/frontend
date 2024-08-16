@@ -1,0 +1,21 @@
+.badge {
+  width: fit-content;
+  padding: 7px 14px;
+  border-radius: 100px;
+  font-family: 'SUIT';
+  font-weight: 600;
+  font-size: 14px;
+
+  &.black {
+    background: var(--artiside-neutral1);
+    color: var(--artiside-neutral6);
+  }
+  &.blue {
+    color: var(--primary-color);
+    background-color: var(--primary-color-20);
+  }
+  &.purple {
+    background: #efecff;
+    color: #5f44ff;
+  }
+}

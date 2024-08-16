@@ -1,0 +1,21 @@
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  border: 1px solid var(--artiside-neutral3);
+  border-radius: 100px;
+  padding: 0 20px;
+  color: var(--artiside-neutral2);
+  font-weight: 400;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  @media (max-width: 480px) {
+    font-size: 14px;
+    height: 28px;
+    padding: 0 16px;
+  }
+}

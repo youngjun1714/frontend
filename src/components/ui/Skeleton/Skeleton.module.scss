@@ -1,0 +1,26 @@
+.skeleton {
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    rgba(18, 18, 18, 0.04) 8%,
+    rgba(18, 18, 18, 0.08) 36%,
+    rgba(18, 18, 18, 0.04) 66%
+  );
+  animation: pulse 2s infinite ease-in-out;
+  animation-fill-mode: forwards;
+
+  &.avatar {
+    border-radius: 100px;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 300px 0;
+  }
+}

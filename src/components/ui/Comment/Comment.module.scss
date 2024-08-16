@@ -1,0 +1,94 @@
+.comment {
+}
+
+.main {
+  display: flex;
+  gap: 10px;
+}
+
+.text {
+  flex-grow: 1;
+  font-size: 14px;
+  line-height: 140%;
+  & > .username {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 600;
+  }
+
+  & > .content {
+    font-weight: 400;
+    overflow-wrap: break-word;
+  }
+
+  & > .info {
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--artiside-neutral2);
+
+    & > button {
+      color: var(--artiside-neutral2);
+    }
+  }
+}
+
+.loadButton {
+  width: 100%;
+  color: #acacac;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.heart {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+
+  &:hover svg {
+    animation: heartbeat 1s infinite;
+  }
+}
+
+.deleteButton {
+  line-height: 1px;
+  & > svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(1.15);
+  }
+
+  40% {
+    transform: scale(1);
+  }
+
+  60% {
+    transform: scale(1.15);
+  }
+
+  80% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.isReported {
+  color: var(--artiside-neutral2);
+}

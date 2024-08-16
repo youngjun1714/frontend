@@ -1,0 +1,65 @@
+.profile {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 22px;
+  padding: 6px;
+  border-radius: 5px;
+  transition: 0.25s;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--artiside-neutral5);
+  }
+}
+
+.nameWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.userName {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  & > span {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'SUIT';
+    color: rgba(27, 30, 36, 1);
+  }
+}
+
+.singleName .userName span {
+  font-size: 13px;
+  font-family: Rota;
+}
+
+.artistName {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'SUIT';
+  color: rgba(170, 170, 170, 1);
+  margin-top: 2px;
+}
+
+.wallet {
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--artiside-neutral5);
+  border-radius: 100px;
+  padding: 10px 20px;
+}
+
+.network {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  & > h1 {
+    color: var(--artiside-neutral2);
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

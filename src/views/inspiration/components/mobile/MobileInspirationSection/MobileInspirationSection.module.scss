@@ -1,0 +1,7 @@
+.section {
+  display: none;
+  width: 100%;
+  @media (max-width: 480px) {
+    display: block;
+  }
+}

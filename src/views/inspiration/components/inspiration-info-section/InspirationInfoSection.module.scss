@@ -1,0 +1,385 @@
+.section {
+  height: 100%;
+  display: block;
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+.heading {
+  & > h1 {
+    color: var(--artiside-neutral1);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 41.6px;
+    word-break: break-all;
+  }
+}
+
+.countWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0 40px;
+
+  & > div,
+  button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    color: var(--artiside-neutral3);
+  }
+}
+
+.artist {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--artiside-neutral5);
+
+  & > div {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  & > div > a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  & > div:nth-child(1) {
+    & > div:nth-child(2) {
+      // artist name, artwork name
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 6px;
+
+      & > h1 {
+        // artist name
+        font-size: 18px;
+        color: var(--artiside-neutral1);
+        font-weight: 600;
+      }
+
+      & > p {
+        font-size: 12px;
+        color: var(--artiside-neutral3);
+        font-weight: 500;
+      }
+    }
+  }
+
+  & > div:nth-child(2) {
+    gap: 30px;
+  }
+}
+
+.buttons {
+  & > button:hover {
+  }
+}
+
+.buttonWrapper {
+  padding: 4px 12px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuList {
+  width: 196px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-family: SUIT;
+  color: var(--artiside-neutral1);
+  gap: 12px;
+}
+
+.aboutArtwork {
+  margin-bottom: 20px;
+  & > h1 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--artiside-neutral3);
+    margin-bottom: 16px;
+  }
+
+  &:hover {
+    .arrow {
+      transform: translateX(10%);
+    }
+  }
+}
+
+.article {
+  max-height: 252px;
+  overflow: auto;
+}
+
+.article > p {
+  font-size: 16px;
+  color: var(--artiside-neutral1);
+  font-weight: 300;
+  line-height: 25.6px;
+  letter-spacing: -1%;
+  margin-bottom: 18px;
+  word-break: break-all;
+}
+
+.descriptionWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  margin: 16px 0;
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  & > p {
+    color: var(--artiside-neutral1);
+    line-height: 19.6px;
+    text-align: start;
+    font-weight: 300;
+    max-height: 82px;
+    overflow: auto;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    & > b {
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+  & > p:nth-child(2) {
+    color: var(--artiside-neutral2);
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+
+.arrowButton {
+  display: flex;
+  align-items: flex-start;
+  gap: 2px;
+  color: var(--artiside-neutral2);
+  font-size: 14px;
+  // margin: 18px 0 28px;
+}
+
+.commentPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 252px;
+  overflow: hidden;
+  overflow-y: auto;
+  .loadButton {
+    color: #acacac;
+    font-size: 13px;
+    font-weight: 700;
+  }
+}
+
+.inputWrapper {
+  display: flex;
+  // align-items: center;
+  gap: 10px;
+  // padding-bottom: 32px;
+  // height: 48px;
+  & > form {
+    flex-grow: 1;
+  }
+
+  & > form > .input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    // height: 48px;
+    padding: 16px 20px 10px;
+    border: 1px solid var(--artiside-neutral4);
+    border-radius: 20px;
+    transition: 0.25s ease;
+
+    & > textarea {
+      background-color: transparent;
+      resize: none;
+      width: 100%;
+      border: none;
+      outline: none;
+      line-height: 140%;
+      font-size: 14px;
+      font-family: SUIT;
+      font-weight: 400;
+      color: var(--artiside-neutral1);
+
+      &.active {
+        width: 100%;
+      }
+      &::placeholder {
+        color: var(--artiside-neutral3);
+      }
+    }
+
+    & > .interactionWrapper {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+
+      & > button {
+        & > svg {
+          transition: 0.15s;
+        }
+        &:hover {
+          & > svg {
+            transform: scale(1.14);
+            transition: 0.25s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.commentLength {
+  color: var(--artiside-neutral4);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.downsize {
+  padding: 10px 20px !important;
+  display: flex;
+  flex-direction: row !important;
+  align-items: center !important;
+  transition: 0.25s ease;
+}
+
+.on {
+  background-color: var(--primary-color);
+  border-radius: 100px;
+  width: 34px;
+  height: 34px;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.noItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+  color: var(--artiside-neutral2);
+}
+
+.hoverPrimary {
+  &:hover svg {
+    & > path {
+      fill: var(--artiside-neutral1);
+    }
+  }
+}
+.isLiked {
+  animation: like 450ms ease-in-out;
+  &:hover svg {
+    & > path {
+      fill: var(--primary-color);
+    }
+  }
+}
+
+.hoverBlack {
+  & > svg {
+    stroke: var(--artiside-neutral2);
+  }
+  &:hover svg {
+    transition: 0.25s;
+    stroke: var(--artiside-neutral1);
+    & > path {
+      fill: var(--artiside-neutral1);
+      stroke: var(--artiside-neutral1);
+    }
+    & > rect {
+      fill: var(--artiside-neutral1);
+    }
+  }
+}
+
+.dotMenu {
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dotMenuButton {
+  position: relative;
+  width: 196px;
+  height: 44px;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: var(--artiside-neutral1);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  &:disabled {
+    color: var(--artiside-neutral1);
+  }
+  & > span > svg {
+    margin-left: 3px;
+    vertical-align: middle;
+  }
+}
+
+.hoverFavorite {
+  &:hover svg {
+    transition: 0.25s;
+    & > path {
+      stroke: var(--artiside-neutral1);
+    }
+  }
+}
+
+.hoverFavoriteSelected {
+  & > svg > path {
+    fill: var(--artiside-neutral1);
+    stroke: var(--artiside-neutral1);
+  }
+  &:hover svg {
+    transition: 0.25s;
+    fill: var(--artiside-neutral1);
+  }
+}
+
+@keyframes like {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

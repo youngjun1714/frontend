@@ -1,0 +1,41 @@
+.resultHeader {
+  height: 52px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  font-family: Rota;
+  font-weight: 500;
+  color: var(--artiside-neutral2);
+  overflow: auto;
+
+  & > li {
+    cursor: pointer;
+  }
+}
+
+.active {
+  color: var(--artiside-neutral1);
+}
+
+.resultTable {
+  margin-top: 16px;
+  max-height: 224px;
+  overflow-y: auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+
+  & > button {
+    border: 1px solid var(--artiside-neutral5);
+    border-radius: 100px;
+    padding: 6px 10px;
+    font-size: 12px;
+    font-family: Rota;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,113 @@
+.wrapper {
+  width: 100%;
+  max-width: 1560px;
+  margin: 200px auto 0;
+  text-align: center;
+  @media (max-width: 1080px) {
+    margin: 140px auto 0;
+  }
+}
+.imgWrapper {
+  position: relative;
+  margin: 0 auto 60px;
+  max-width: 1452px;
+
+  @media (max-width: 1080px) {
+    width: calc(100% + 60px);
+    aspect-ratio: 328 / 176;
+    margin: 0 -30px 80px;
+  }
+
+  img {
+    width: 100%;
+    &.web {
+      @media (max-width: 1080px) {
+        display: none;
+      }
+    }
+    &.mobile {
+      display: none;
+      @media (max-width: 1080px) {
+        width: auto;
+        display: block;
+      }
+    }
+    &.star {
+      position: absolute;
+      bottom: -10px;
+      right: 30px;
+    }
+  }
+}
+.divider {
+  width: 42px;
+  height: 4px;
+  background: #d9d9d9;
+  margin-bottom: 24px;
+  @media (max-width: 1080px) {
+    display: none;
+  }
+}
+.text {
+  max-width: 900px;
+  text-align: left;
+  color: #555a5e;
+  font-family: SUIT;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 38.4px */
+  letter-spacing: -0.48px;
+  @media (max-width: 1080px) {
+    font-size: 14px;
+    letter-spacing: -0.28px;
+  }
+  b {
+    font-weight: 600;
+    @media (max-width: 1080px) {
+      font-size: 17px;
+      line-height: 140%; /* 23.8px */
+      letter-spacing: -0.34px;
+    }
+  }
+}
+.btnWrap {
+  display: flex;
+  margin-top: 32px;
+  gap: 10px;
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
+.goBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 266px;
+  height: 54px;
+  border-radius: 100px;
+  background: #fff;
+  color: #343434;
+  font-family: SUIT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: -0.32px;
+  @media (max-width: 1080px) {
+    margin: 0 auto;
+    span {
+      text-decoration: underline;
+    }
+  }
+  b {
+    display: inline-block;
+    color: #8837f1;
+    font-weight: 700;
+    margin-right: 4px;
+    @media (max-width: 1080px) {
+      text-decoration: none;
+    }
+  }
+}

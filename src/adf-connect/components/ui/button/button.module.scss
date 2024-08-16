@@ -1,0 +1,65 @@
+.button {
+  padding: 0 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  background: linear-gradient(113.33deg, #000000 34.93%, #555555 97.4%);
+  border-radius: 100px;
+  font-family: 'SUIT';
+  font-weight: 600;
+  font-size: 15px;
+
+  &:hover,
+  &.primary {
+    background: linear-gradient(109.69deg, #6c54f3 36.82%, #9482ff 92.64%);
+    cursor: pointer;
+  }
+
+  &.secondary {
+    background: #ffffff;
+    border: 1px solid #e3e3e3;
+    color: #333333;
+    font-weight: 500;
+  }
+  &.underlined {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #888888;
+    text-decoration: underline;
+    padding: 0;
+    font-weight: 400;
+  }
+
+  &:disabled {
+    background: linear-gradient(0deg, #eeeeee, #eeeeee), #dddddd;
+    color: rgba(187, 187, 187, 1);
+    cursor: not-allowed;
+  }
+
+  &.sm {
+    height: 50px;
+    font-size: 14px;
+  }
+
+  &.md {
+    height: 60px;
+  }
+
+  &.lg {
+    height: 70px;
+    font-size: 20px;
+  }
+
+  &.square {
+    background: linear-gradient(109.69deg, #6c54f3 36.82%, #9482ff 92.64%);
+    border-radius: 5px;
+    padding: 10px 20px;
+    height: 40px;
+    font-size: 14px;
+    width: 100%;
+    box-shadow: inset -1px -1px 2px #412ac9, inset 1px 1px 2px #c9beff;
+  }
+}

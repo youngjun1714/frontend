@@ -1,0 +1,17 @@
+.button {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  font-family: SUIT;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: var(--primary-color);
+  padding: 0 50px;
+  border-radius: 100px;
+  border: 2px solid var(--artiside-neutral1);
+  border-bottom: 6px solid var(--artiside-neutral1);
+
+  &:active {
+    border-bottom: 3px solid var(--artiside-neutral1);
+  }
+}

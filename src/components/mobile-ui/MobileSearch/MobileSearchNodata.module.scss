@@ -1,0 +1,10 @@
+.article {
+  width: 100%;
+  height: calc(100vh - 190px);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  color: var(--artiside-neutral2);
+  font-weight: 500;
+}

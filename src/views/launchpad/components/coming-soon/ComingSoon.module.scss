@@ -1,0 +1,77 @@
+.comingSoon {
+  margin: 72px 0;
+  text-align: center;
+  .title {
+    color: #5f44ff;
+    font-family: SUIT;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -2.88px;
+    margin-bottom: 4px;
+  }
+  .desc {
+    color: var(--artiside-neutral2);
+    font-family: SUIT;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.48px;
+    margin-bottom: 60px;
+  }
+  .stakingDesc {
+    color: var(--artiside-neutral1);
+    text-align: center;
+    font-family: SUIT;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+    letter-spacing: -0.4px;
+    margin: 20px 0 40px;
+    b {
+      color: #5f44ff;
+      font-weight: 700;
+    }
+  }
+  .goBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 304px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #5f44ff;
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 21.6px */
+    letter-spacing: -0.18px;
+    margin: 0 auto 80px;
+  }
+  .timer {
+    width: fit-content;
+    margin: 0 auto 60px;
+  }
+  .artwork {
+    position: relative;
+    height: 571px;
+    div {
+      position: absolute;
+      bottom: 60px;
+      z-index: -1;
+      color: var(--artiside-neutral6);
+      font-family: SUIT;
+      font-size: 200px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      letter-spacing: -8px;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+.banner {
+  z-index: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 2560px;
+  width: 100%;
+  height: 385px;
+  @media(max-width: 480px) {
+    height: 152px;
+  }
+  object-fit: cover;
+  background: linear-gradient(
+    to right,
+    rgba(18, 18, 18, 0.04) 8%,
+    rgba(18, 18, 18, 0.08) 36%,
+    rgba(18, 18, 18, 0.04) 66%
+  );
+  animation: pulse 2s infinite ease-in-out;
+  animation-fill-mode: forwards;
+  background-position: center center;
+  margin: 0 auto;
+
+  .edit {
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover {
+    &.isSettingBanner {
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .edit {
+        display: block;
+        z-index: 2;
+      }
+    }
+  }
+}
+
+.defaultBanner {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.6041010154061625) 0%, rgba(0,0,0,0.34919905462184875) 26%, rgba(0,0,0,0) 100%);
+    z-index: 2;
+  }
+}
+
+.backButton {
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  z-index: 2;
+  @media (max-width: 480px) {
+    display: block;
+  }
+}
+
+.setMode {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 300px 0;
+  }
+}
+
+.tabMenu {
+  display: flex;
+  gap: 24px;
+  color: var(--artiside-neutral2);
+  padding: 12px;
+  font-weight: 600;
+
+  & > li {
+    padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+  }
+
+  & > .active {
+    color: var(--artiside-neutral1);
+    border-color: var(--primary-color);
+    font-weight: 700;
+    transition: color 0.25s;
+  }
+}

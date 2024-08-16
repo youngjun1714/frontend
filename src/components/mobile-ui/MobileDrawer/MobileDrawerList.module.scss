@@ -1,0 +1,26 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  cursor: pointer;
+  transition: background-color 300ms;
+  &:hover {
+    border-radius: 5px;
+    background-color: var(--artiside-neutral5);
+  }
+  & > h1 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--artiside-neutral1);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    & > span {
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+}

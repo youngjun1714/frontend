@@ -1,0 +1,17 @@
+.box {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 60px;
+  max-width: 1600px;
+  width: 100%;
+  padding: 130px 30px;
+  @media (max-width: 1080px) {
+    border-radius: 20px;
+    padding: 40px 0px;
+  }
+}
+
+.whiteBackground {
+  background-color: var(--artiside-neutral7);
+}

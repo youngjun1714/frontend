@@ -1,0 +1,88 @@
+.number {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  font-family: Rota;
+
+  .numberDiv {
+    color: var(--artiside-neutral1);
+    font-size: 20px;
+    font-weight: 700;
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
+  }
+
+  &.xs {
+    .numberDiv {
+      font-size: 20px;
+    }
+    .decimal {
+      font-size: 14px;
+    }
+    .endDecorator {
+      font-size: 12px;
+    }
+  }
+
+  &.sm {
+    .numberDiv {
+      font-size: 24px;
+      line-height: 10px;
+    }
+    .decimal {
+      font-size: 16px;
+    }
+    .endDecorator {
+      font-size: 14px;
+    }
+  }
+  &.md {
+    .numberDiv {
+      font-size: 28px;
+      line-height: 24px;
+    }
+    .decimal {
+      font-size: 18px;
+    }
+    .endDecorator {
+      font-size: 16px;
+    }
+  }
+  &.lg {
+    .numberDiv {
+      font-size: 36px;
+      line-height: 26px;
+    }
+    .decimal {
+      font-size: 18px;
+    }
+    .endDecorator {
+      font-size: 16px;
+    }
+  }
+}
+
+.decimal,
+.endDecorator {
+  color: var(--artiside-neutral2);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: SUIT;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  @media (max-width: 480px) {
+    font-size: 13px;
+  }
+}
+
+.dollar {
+  color: var(--artiside-neutral2);
+  font-family: SUIT;
+
+  & > p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

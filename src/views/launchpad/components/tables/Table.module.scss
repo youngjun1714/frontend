@@ -1,0 +1,85 @@
+.table {
+  & > thead tr {
+    height: 38px;
+    & > th {
+      height: 38px;
+      padding: 0px 10px;
+      color: var(--artiside-neutral2);
+      font-family: SUIT;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 120%;
+      letter-spacing: -0.28px;
+      border-bottom: 1px solid var(--artiside-neutral5);
+    }
+  }
+  & > tbody tr {
+    height: 88px;
+    & > td {
+      height: 88px;
+      padding: 16px 10px;
+      color: #000000;
+      font-family: SUIT;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 120%;
+      border-bottom: 1px solid var(--artiside-neutral5);
+    }
+  }
+
+  td:nth-of-type(2) {
+    width: 20%;
+  }
+
+  .artistName {
+    color: var(--artiside-neutral2);
+    font-size: 13px;
+  }
+
+  .selected {
+    display: inline-flex;
+    align-items: center;
+    height: 30px;
+    border-radius: 100px;
+    padding: 0 16px 0 11px;
+    background: rgba(95, 68, 255, 0.2);
+    color: #5f44ff;
+    font-family: SUIT;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .votingReward span {
+    color: #5f44ff;
+  }
+
+  .voteBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 96px;
+    height: 48px;
+    border-radius: 5px;
+    background: #5f44ff;
+    color: #fcfeff;
+    font-family: SUIT;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 16px */
+    letter-spacing: -0.32px;
+    margin-left: auto;
+  }
+  .noItems {
+    height: 340px;
+    border: none;
+    color: var(--artiside-neutral3);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -0.18px;
+  }
+}

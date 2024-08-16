@@ -1,0 +1,74 @@
+.modalBody {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.title {
+  color: var(--artiside-neutral1);
+  font-size: 15px;
+  font-family: SUIT;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  & > span {
+    font-weight: 800;
+  }
+}
+.boostBox {
+  border: 1px solid var(--artiside-neutral5);
+  border-radius: 10px;
+  pointer-events: none;
+  & > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+    line-height: 21px;
+  }
+  & > div:first-of-type {
+    padding: 15px 18px 19px;
+    border-bottom: 1px solid var(--artiside-neutral5);
+    & > svg {
+      margin-top: 6px;
+    }
+  }
+  & > div:last-of-type {
+    padding: 19px 18px 25px;
+  }
+}
+
+.subTitle {
+  color: var(--artiside-neutral1);
+  font-size: 15px;
+  font-weight: 600;
+  & > strong {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 29px;
+  }
+}
+.description {
+  color: var(--artiside-neutral2);
+  font-size: 15px;
+  font-weight: 400;
+  & > span {
+    font-weight: 600;
+    color: var(--artiside-neutral1);
+  }
+}
+
+.button {
+  min-width: 314px;
+  padding: 16px 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: center;
+  background-color: var(--primary-color);
+  border-radius: 100px;
+}

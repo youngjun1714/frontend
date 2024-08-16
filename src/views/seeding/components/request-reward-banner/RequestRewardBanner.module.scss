@@ -1,0 +1,63 @@
+.requestRewardBannerContainer {
+  position: absolute;
+  width: 100%;
+  top: 5px;
+  right: 0;
+  text-align: center;
+}
+.requestRewardBanner {
+  position: relative;
+  display: inline-flex;
+  padding: 0 24px;
+  height: 62px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  border: 1px solid rgba(177, 185, 193, 0.6);
+  background: radial-gradient(
+    149.14% 139.71% at 7.35% 8.24%,
+    rgba(223, 230, 240, 0.8) 0%,
+    rgba(68, 85, 109, 0) 100%
+  );
+  backdrop-filter: blur(5px);
+  width: 100%;
+  max-width: 1260px;
+  color: var(--artiside-neutral1);
+  font-family: SUIT;
+  font-size: 16px;
+  font-weight: 400;
+  z-index: 1;
+  b {
+    font-weight: 700;
+  }
+  .closeButton {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+  }
+}
+
+.tooltip {
+  color: #1b1e24;
+  font-family: SUIT;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -0.3px;
+}
+.tooltipBold {
+  color: var(--primary-color);
+}
+.requestButton {
+  display: inline-flex;
+  height: 30px;
+  padding: 0 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #000;
+  color: #fff;
+  font-family: SUIT;
+  font-size: 11px;
+  font-weight: 700;
+}

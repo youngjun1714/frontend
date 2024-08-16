@@ -1,0 +1,97 @@
+.panel {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 480px) {
+    pointer-events: none;
+  }
+}
+
+.title {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  & > h1 {
+    overflow: hidden;
+    color: var(--artiside-neutral5);
+    font-weight: 500;
+    line-height: 22px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+  }
+}
+
+.badge {
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 30px;
+  background: linear-gradient(180deg, #05ccc6 0%, #00b5b0 100%);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.36), inset -1px 0px 1px #099e9a,
+    inset 1px 0px 1px rgba(255, 255, 255, 0.4);
+}
+
+.owner {
+  display: flex;
+  gap: 6px !important;
+  align-items: center;
+  overflow: hidden;
+  & > .user {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 100%;
+    & > h1 {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      & > span {
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      & > svg {
+        width: 100%;
+      }
+    }
+    & > h2 {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 12px;
+      font-weight: 500;
+      width: 100%;
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  gap: 20px;
+}
+
+.isLiked {
+  animation: like 450ms ease-in-out;
+}
+
+@keyframes like {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

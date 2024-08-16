@@ -1,0 +1,126 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 198px;
+  box-sizing: border-box;
+  background-color: #eeeeee;
+  padding: 0 30px;
+
+  @media (max-width: 768px) {
+    height: 380px;
+    position: relative;
+    padding: 30px;
+    align-items: flex-start;
+  }
+}
+
+.container {
+  max-width: 1600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+
+  & > .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+
+    & > .line {
+      margin-bottom: 16px;
+    }
+
+    & > .snsWrapper {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+
+      @media (max-width: 768px) {
+        gap: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid rgba(221, 221, 221, 1);
+      }
+
+      & > button {
+        cursor: pointer;
+      }
+      & > div:hover svg path {
+        fill: #1b1e24;
+        transition: 0.2s ease;
+      }
+    }
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & > .line {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+}
+
+.snsWrapper {
+  display: flex;
+  gap: 35px;
+
+  & > div {
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}
+
+.copyRight {
+  color: rgba(187, 187, 187, 1);
+  font-weight: 500;
+  font-family: 'SUIT';
+  font-size: 14px;
+
+  @media (max-width: 768px) {
+    position: absolute;
+    bottom: 20px;
+  }
+}
+
+.navMenu {
+  display: flex;
+  gap: 40px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  & > li {
+    cursor: pointer;
+    font-family: 'SUIT';
+    font-weight: 500;
+    font-size: 15px;
+    color: rgba(170, 170, 170, 1);
+
+    &:hover {
+      color: #1b1e24;
+      transition: 0.2s;
+    }
+  }
+}

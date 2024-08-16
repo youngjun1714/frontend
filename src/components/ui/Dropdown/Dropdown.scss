@@ -1,0 +1,205 @@
+.dropdown {
+  position: relative;
+
+  &__title {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    padding-left: 25px;
+    color: var(--artiside-neutral2);
+    font-weight: 600;
+    text-align: left;
+    border: 1px solid var(--artiside-neutral5);
+    border-radius: 100px;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(142, 148, 169, 0.3);
+    box-sizing: border-box;
+    font-family: SUIT;
+    font-weight: 700;
+    &:disabled {
+      cursor: default;
+      background-color: #f4f4f4 !important;
+      border: none;
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__title::before {
+    display: inline-block;
+    position: absolute;
+    right: 21px;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #555555;
+    border-right: 2px solid #555555;
+    transform: rotate(135deg);
+    transition: transform 0.2s;
+    content: '';
+  }
+
+  &__title span {
+    padding-right: 20px;
+    font-family: 'Rota', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+      'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+      'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    white-space: normal;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  &__title-icon {
+    width: 30px;
+    height: 24px;
+    margin-right: 7px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__title-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    overflow: hidden;
+    position: absolute;
+    height: 0;
+    padding: 0;
+    background-color: #ffffff;
+    border: 1px solid #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px 0px #63636333;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    height: 50px;
+  }
+
+  &__item span {
+    padding-left: 9px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: left;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+    white-space: normal;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-family: 'Rota', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+      'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+      'Helvetica Neue', sans-serif;
+    font-weight: 400;
+  }
+
+  @media (min-width: 769px) {
+    &__item:hover {
+      span {
+        font-family: 'Rota', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+          'Helvetica Neue', sans-serif;
+        font-weight: 400;
+      }
+      background-color: var(--artiside-neutral5);
+      border-radius: 10px;
+      transition: background-color 300ms;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__item:active {
+      span {
+        font-family: 'Rota', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+          'Helvetica Neue', sans-serif;
+        font-weight: 400;
+      }
+      background-color: #f3f1ff;
+      border-radius: 10px;
+    }
+  }
+
+  &__country {
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    width: 20px;
+    height: 15px;
+    margin-top: -7.5px;
+    background-size: cover;
+  }
+}
+
+.sub {
+  .dropdown__title {
+    box-shadow: none;
+    &::before {
+      border-top: 2px solid #bbc1c7;
+      border-right: 2px solid #bbc1c7;
+    }
+  }
+}
+
+.dropdown__list {
+  visibility: hidden;
+  translate: 0 -20px;
+  opacity: 0;
+  width: 100%;
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    translate: 0 0;
+    overflow-y: auto;
+    height: auto;
+    max-height: 230px;
+    padding: 11px;
+    z-index: 9;
+    transition: visibility 0.5s, opacity 0.5s, translate 0.25s;
+  }
+}
+
+.dropdown__title.active {
+  border: 1px solid var(--primary-color);
+  transition: border 300ms;
+
+  &::before {
+    transform: rotate(-45deg);
+    transition: 0.2s;
+  }
+}
+
+.country-dropdown {
+  .dropdown__title::before {
+    width: 0;
+    height: 0;
+    border-color: #dddddd transparent transparent;
+    border-style: solid;
+    border-width: 7px 5px 0;
+    transform: rotate(0);
+  }
+
+  .dropdown__item span {
+    padding-left: 47px;
+  }
+
+  .dropdown__title.active::before {
+    width: 0;
+    height: 0;
+    border-color: #dddddd transparent transparent;
+    border-style: solid;
+    border-width: 7px 5px 0;
+    transform: rotate(180deg);
+  }
+}

@@ -1,0 +1,423 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+.modalContainer {
+  min-width: 600px;
+  width: fit-content;
+  border-radius: 20px;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  padding: 0 30px;
+  .headerTitle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.4px;
+    &.center {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      font-size: 28px;
+      line-height: 100%; /* 28px */
+      letter-spacing: -0.56px;
+      b {
+        color: #5f44ff;
+      }
+    }
+  }
+}
+
+.modalBody {
+  padding: 0px 34px 34px;
+}
+
+.primaryBtn {
+  width: 100%;
+  height: 56px;
+  border-radius: 100px;
+  background: #00b5b0;
+  color: #fff;
+  font-family: SUIT;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 18px */
+  letter-spacing: -0.36px;
+}
+.secondBtn {
+  width: 100%;
+  height: 56px;
+  color: var(--artiside-neutral1);
+  text-align: center;
+  font-family: SUIT;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 18px */
+  letter-spacing: -0.36px;
+}
+
+.unstakeConfirm {
+  padding: 40px 34px 34px;
+  text-align: center;
+
+  .title {
+    color: var(--artiside-neutral1);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 28px */
+    letter-spacing: -0.56px;
+    margin-bottom: 24px;
+  }
+  .desc {
+    color: var(--artiside-neutral1);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 18px */
+    letter-spacing: -0.36px;
+    margin-bottom: 32px;
+
+    b {
+      color: #00b5b0;
+    }
+  }
+
+  .rewardBox {
+    border-radius: 10px;
+    border: 1px solid #ced3d8;
+    background: var(--artiside-neutral6);
+    padding: 30px 16px;
+    margin-bottom: 30px;
+
+    .rewardTitle {
+      color: var(--artiside-neutral2);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%; /* 19.2px */
+      letter-spacing: -0.16px;
+      margin-bottom: 24px;
+    }
+    .rewardWrap {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      padding: 0 20px;
+    }
+    .divider {
+      width: 1px;
+      height: 60px;
+      background-color: #ced3d8;
+    }
+    .reward {
+      .value {
+        text-align: center;
+        margin-bottom: 4px;
+        div {
+          width: fit-content;
+          margin: 0 auto;
+          align-items: baseline;
+          line-height: 1;
+        }
+      }
+      .usd {
+        color: var(--artiside-neutral2);
+        font-family: SUIT;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; /* 19.2px */
+        letter-spacing: -0.16px;
+      }
+    }
+  }
+}
+
+.voteModal {
+  width: 660px;
+  .artworkWrap {
+    position: relative;
+    width: 400px;
+    height: 266px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 60px auto 36px;
+  }
+  .voteForm {
+    border-top: 1px solid #e6e9ec;
+    padding: 0 36px 36px;
+  }
+
+  .flexDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed #e6e9ec;
+    padding: 24px 0;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+  .label {
+    color: var(--artiside-neutral2);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 16px */
+    letter-spacing: -0.32px;
+  }
+  .userName {
+    color: var(--artiside-neutral1);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+  }
+  .artistName {
+    color: var(--artiside-neutral2);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+  }
+
+  .input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 420px;
+    border: 1px solid #e6e9ec;
+    border-radius: 5px;
+    height: 70px;
+    padding: 0 18px;
+    gap: 8px;
+    & > input {
+      width: 100%;
+      font-size: 28px;
+      outline: none;
+      border: none;
+      text-align: right;
+      font-family: SUIT;
+      font-weight: 800;
+
+      &::placeholder {
+        color: var(--artiside-neutral4);
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+    & > span {
+      color: var(--artiside-neutral2);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%;
+    }
+  }
+
+  .voteBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    height: 56px;
+    border-radius: 100px;
+    background: #5f44ff;
+    color: #fff;
+    font-family: SUIT;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%; /* 18px */
+    letter-spacing: -0.36px;
+    &:disabled {
+      background: var(--artiside-neutral5);
+      box-shadow: none;
+      color: var(--artiside-neutral3);
+      cursor: not-allowed;
+      svg path {
+        stroke: var(--artiside-neutral3);
+      }
+    }
+  }
+}
+
+.voteConfirm {
+  width: 660px;
+  padding: 40px 34px 34px;
+  text-align: center;
+
+  .title {
+    color: var(--artiside-neutral1);
+    font-family: SUIT;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 33.6px */
+    letter-spacing: -0.56px;
+    margin: 16px 0;
+  }
+  .desc {
+    color: #7d8287;
+    font-family: SUIT;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 32px;
+  }
+}
+
+.selectedArtist {
+  width: 800px;
+  .fixedHeadTable {
+    min-height: 390px;
+
+    th {
+      color: #9497a0;
+      font-family: SUIT;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 120%;
+      letter-spacing: -0.28px;
+      .adf {
+        color: var(--artiside-neutral4);
+        font-size: 12px;
+        letter-spacing: -0.24px;
+      }
+      &:first-of-type {
+        padding-left: 20px;
+      }
+      &:last-of-type {
+        padding-right: 40px;
+      }
+    }
+    td {
+      color: var(--artiside-neutral1);
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 120%;
+      font-family: SUIT;
+      span {
+        color: var(--artiside-neutral2);
+        font-weight: 500;
+        font-size: 16px;
+      }
+      &:first-of-type {
+        padding-left: 20px;
+      }
+      &:last-of-type {
+        padding-right: 40px;
+      }
+    }
+    .plus {
+      color: var(--primary-color);
+    }
+    .date {
+      font-size: 12px;
+    }
+    .time {
+      color: var(--artiside-neutral2);
+      font-size: 12px;
+    }
+    .noHistory {
+      height: 340px;
+      border: none;
+      color: var(--artiside-neutral3);
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 100%;
+      letter-spacing: -0.18px;
+    }
+  }
+}
+
+.latestSelectedArtistModal {
+  width: 600px;
+  padding: 0 30px 40px;
+  .artworkWrap {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto 40px;
+  }
+
+  .flexDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed #e6e9ec;
+    padding: 24px 0 40px;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+  .label {
+    color: var(--artiside-neutral2);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 16px */
+    letter-spacing: -0.32px;
+  }
+  .value {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+  }
+  .userName {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--artiside-neutral1);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+  }
+  .artistName {
+    color: var(--artiside-neutral2);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+  }
+
+  .goBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    height: 56px;
+    border-radius: 100px;
+    background: #00b5b0;
+    box-shadow: 0px 5px 10px 0px rgba(38, 38, 38, 0.15);
+    color: #fff;
+    font-family: SUIT;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 18px */
+    letter-spacing: -0.18px;
+  }
+}

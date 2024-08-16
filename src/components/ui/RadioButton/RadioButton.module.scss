@@ -1,0 +1,54 @@
+.radio {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  input {
+    position: relative;
+    vertical-align: middle;
+    appearance: none;
+    border: max(2px, 0.1em) solid var(--artiside-neutral3);
+    border-radius: 50%;
+    width: 1.6em;
+    height: 1.6em;
+  }
+
+  input:focus-visible {
+    outline-offset: max(2px, 0.1em);
+    outline: max(20x, 0.1em) dotted tomao;
+  }
+
+  input:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 0.3em solid var(--artiside-neutral2);
+  }
+
+  input:checked {
+    border: 0.45em solid var(--primary-color);
+  }
+
+  input:checked::after {
+    display: block;
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    content: '';
+    border-radius: 50%;
+    width: 1.6em;
+    height: 1.6em;
+    box-shadow: 0px 2px 2px 0px #00938f inset;
+  }
+
+  input:disabled {
+    border: none;
+    background-color: var(--artiside-neutral2);
+    box-shadow: none;
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  label {
+    cursor: pointer;
+  }
+}

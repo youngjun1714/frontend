@@ -1,0 +1,31 @@
+.article {
+  padding-bottom: 80px;
+
+  &:not(:first-child) {
+    padding-top: 80px;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--typography-black-5);
+  }
+
+  & > p {
+    font-weight: 400;
+    line-height: 25.6px;
+    overflow-wrap: break-word;
+  }
+}
+
+.question {
+  font-weight: 600;
+  line-height: 22.4px;
+  display: flex;
+  position: relative;
+  margin-bottom: 15px;
+
+  &::before {
+    position: absolute;
+    left: -24px;
+    content: 'Q.';
+  }
+}

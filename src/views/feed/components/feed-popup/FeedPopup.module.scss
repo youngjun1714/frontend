@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 56px;
+
+  & > p {
+    color: var(--artiside-neutral3);
+  }
+}
+
+.title {
+  font-size: 43px;
+  font-weight: 600;
+  line-height: 47.3px;
+  margin-bottom: 16px;
+  & > span {
+    font-family: 'Yellowtail';
+    color: var(--secondary-color);
+    font-weight: 400;
+  }
+}
+
+.button {
+  margin-bottom: 32px;
+  width: 100%;
+}

@@ -1,0 +1,43 @@
+.listWrapper {
+  width: 370px;
+  height: 870px;
+  background-color: var(--artiside-neutral6);
+  border-radius: 10px;
+  padding-top: 16px;
+}
+.scrollDiv {
+  height: 800px;
+  overflow-y: scroll;
+  padding: 0 16px 0 12px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.roundCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 80px;
+  margin-bottom: 12px;
+  padding: 12px 15px 12px 20px;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  &.selected {
+    border: 1px solid #000;
+  }
+}
+
+.roundNo {
+  color: var(--artiside-neutral1);
+  font-family: SUIT;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}

@@ -1,0 +1,70 @@
+const Boosted = () => (
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 28 28"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect
+      x="2.33301"
+      y="2.33398"
+      width="23.3333"
+      height="2.33333"
+      fill="var(--artiside-neutral3)"
+    />
+    <rect
+      x="17.5"
+      y="7"
+      width="8.16667"
+      height="2.33333"
+      fill="var(--artiside-neutral3)"
+    />
+    <rect
+      x="17.5"
+      y="11.666"
+      width="8.16667"
+      height="2.33333"
+      fill="var(--artiside-neutral3)"
+    />
+    <rect
+      x="17.5"
+      y="16.334"
+      width="8.16667"
+      height="2.33333"
+      fill="var(--artiside-neutral3)"
+    />
+    <rect
+      x="17.5"
+      y="21"
+      width="8.16667"
+      height="2.33333"
+      fill="var(--artiside-neutral3)"
+    />
+    <rect
+      x="8.16699"
+      y="8.16602"
+      width="2.33333"
+      height="15.1667"
+      fill="var(--artiside-neutral3)"
+    />
+    <rect
+      x="3.5"
+      y="11.9492"
+      width="7.97808"
+      height="2.33333"
+      transform="rotate(-45 3.5 11.9492)"
+      fill="var(--artiside-neutral3)"
+    />
+    <rect
+      x="13.1162"
+      y="13.5996"
+      width="7"
+      height="2.33333"
+      transform="rotate(-135 13.1162 13.5996)"
+      fill="var(--artiside-neutral3)"
+    />
+  </svg>
+);
+
+export default Boosted;

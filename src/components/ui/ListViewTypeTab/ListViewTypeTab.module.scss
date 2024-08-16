@@ -1,0 +1,12 @@
+.listViewTypeTab {
+  border-radius: 10px;
+  border: 1px solid var(--artiside-neutral5);
+  height: 40px;
+  overflow: hidden;
+  & > button {
+    height: 40px;
+  }
+}
+.active {
+  background: var(--artiside-neutral1);
+}

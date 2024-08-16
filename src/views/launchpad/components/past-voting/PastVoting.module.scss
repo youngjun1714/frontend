@@ -1,0 +1,124 @@
+.title {
+  color: var(--artiside-neutral1);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 33.6px */
+  letter-spacing: -0.56px;
+  margin-bottom: 24px;
+}
+
+.pastVotingSwiper {
+  height: 340px;
+  margin-top: -32px;
+
+  .pastVotingSlide {
+    position: relative;
+    height: 304px;
+    margin-top: 32px;
+    border-radius: 10px;
+    background: var(--artiside-neutral6);
+    padding: 56px 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 36px;
+
+    .roundInfo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      .completed {
+        width: 102px;
+        height: 32px;
+        border-radius: 5px;
+        background: #5f44ff;
+        color: var(--artiside-neutral7);
+        font-family: SUIT;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: -0.16px;
+      }
+      .roundNo {
+        color: var(--artiside-neutral1);
+        font-family: SUIT;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 100%; /* 20px */
+        letter-spacing: -0.4px;
+      }
+      .endDate {
+        color: var(--artiside-neutral2);
+        font-family: SUIT;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; /* 19.2px */
+        letter-spacing: -0.32px;
+      }
+    }
+
+    .artistInfo {
+      display: flex;
+      align-items: flex-start;
+      gap: 56px;
+      font-family: SUIT;
+      font-style: normal;
+      .nameWrap {
+        margin-left: 8px;
+        text-align: left;
+      }
+      .userName {
+        color: var(--artiside-neutral1);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 120%;
+      }
+      .artistName {
+        color: var(--artiside-neutral2);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 100%;
+      }
+      .shortBio {
+        color: var(--artiside-neutral1);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.16px;
+        text-align: left;
+        max-width: 720px;
+
+        .totalVP {
+          margin-top: 24px;
+          color: var(--artiside-neutral2);
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 100%;
+          letter-spacing: -0.36px;
+          b {
+            color: var(--artiside-neutral1);
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.56px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    .artwork {
+      position: absolute;
+      top: -32px;
+      right: 110px;
+      width: 280px;
+      height: 280px;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+}

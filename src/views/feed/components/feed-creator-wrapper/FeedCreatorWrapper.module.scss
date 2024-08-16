@@ -1,0 +1,23 @@
+.container {
+  border-bottom: 1px solid var(--typography-black-5);
+}
+
+.creatorWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 50px;
+}
+
+.creator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+
+  & > p {
+    font-weight: 600;
+    font-size: 11px;
+    color: var(--typography-black-1);
+  }
+}
